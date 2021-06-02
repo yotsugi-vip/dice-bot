@@ -45,7 +45,7 @@ const getCoin = () => {
 
 const getDice = () => {
     const num = ["one", "two", "three", "four", "five", "six"];
-    return `:${num[getRandomInt(7)]}:`;
+    return `:${num[getRandomInt(6)]}:`;
 
 }
 
