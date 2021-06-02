@@ -1,4 +1,3 @@
-const _dotenv = require('dotenv').config();
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -11,7 +10,8 @@ const init = () => {
         main(msg);
     });
 
-    client.login(process.env.BOT_TOKEN);
+    // loginの引数がない場合、環境変数"DISCORD_TOKEN"をデフォルトで読み込む
+    client.login();
 }
 
 
